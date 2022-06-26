@@ -6,11 +6,11 @@ let myLeads = [];
 inputBtn.addEventListener('click', function () {
   myLeads.push(inputEl.value);
 
+  let listItems = '';
+
   myLeads.forEach(function (lead) {
-    // ulEl.innerHTML += `<li>${lead}</li>`;
-    const li = document.createElement('li');
-    li.innerText = lead;
-    ulEl.append(li);
+    listItems += `<li>${lead}</li>`;
+    ulEl.innerHTML = listItems;
   });
   
   inputEl.value = ' ';
