@@ -5,6 +5,7 @@ let myLeads = [];
 
 inputBtn.addEventListener('click', function () {
   myLeads.push(inputEl.value);
+  inputEl.value = '';
   renderLeads();
 });
 
@@ -15,5 +16,4 @@ function renderLeads() {
   });
 
   ulEl.innerHTML = listItems;
-  inputEl.value = ' ';
 }
