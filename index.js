@@ -10,8 +10,8 @@ inputBtn.addEventListener('click', function () {
 
   myLeads.forEach(function (lead) {
     listItems += `<li>${lead}</li>`;
-    ulEl.innerHTML = listItems;
   });
-  
+
+  ulEl.innerHTML = listItems;
   inputEl.value = ' ';
 });
