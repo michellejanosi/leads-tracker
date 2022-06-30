@@ -1,5 +1,6 @@
 const inputEl = document.querySelector('#input-el');
 const inputBtn = document.querySelector('#input-btn');
+const tabBtn = document.querySelector('#tab-btn');
 const deleteBtn = document.querySelector('#delete-btn');
 const ulEl = document.querySelector('#ul-el');
 let myLeads = [];
@@ -9,6 +10,14 @@ if (leadsFromLocalStorage) {
   myLeads = leadsFromLocalStorage;
   render(myLeads);
 }
+
+const tabs = {
+  url: 'https://www.linkedin.com/in/per-harald-borgen/'
+};
+
+tabBtn.addEventListener('click', function () {
+  console.log(tabs.url);
+});
 
 deleteBtn.addEventListener('dblclick', function () {
   localStorage.clear();
